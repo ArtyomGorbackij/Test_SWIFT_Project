@@ -11,8 +11,6 @@
 		9A8BE28F26E6735C0099D061 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8BE28E26E6735C0099D061 /* ContentView.swift */; };
 		9A8BE29126E6735F0099D061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A8BE29026E6735F0099D061 /* Assets.xcassets */; };
 		9A8BE29426E6735F0099D061 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A8BE29326E6735F0099D061 /* Preview Assets.xcassets */; };
-		9A8BE29F26E6735F0099D061 /* Test_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8BE29E26E6735F0099D061 /* Test_appTests.swift */; };
-		9A8BE2AA26E6735F0099D061 /* Test_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8BE2A926E6735F0099D061 /* Test_appUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +38,7 @@
 		9A8BE29326E6735F0099D061 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9A8BE29526E6735F0099D061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A8BE29A26E6735F0099D061 /* Test_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A8BE29E26E6735F0099D061 /* Test_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_appTests.swift; sourceTree = "<group>"; };
-		9A8BE2A026E6735F0099D061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A8BE2A526E6735F0099D061 /* Test_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A8BE2A926E6735F0099D061 /* Test_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_appUITests.swift; sourceTree = "<group>"; };
-		9A8BE2AB26E6735F0099D061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				9A8BE28B26E6735C0099D061 /* Test_app */,
-				9A8BE29D26E6735F0099D061 /* Test_appTests */,
-				9A8BE2A826E6735F0099D061 /* Test_appUITests */,
 				9A8BE28A26E6735C0099D061 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,24 +102,6 @@
 				9A8BE29326E6735F0099D061 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		9A8BE29D26E6735F0099D061 /* Test_appTests */ = {
-			isa = PBXGroup;
-			children = (
-				9A8BE29E26E6735F0099D061 /* Test_appTests.swift */,
-				9A8BE2A026E6735F0099D061 /* Info.plist */,
-			);
-			path = Test_appTests;
-			sourceTree = "<group>";
-		};
-		9A8BE2A826E6735F0099D061 /* Test_appUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9A8BE2A926E6735F0099D061 /* Test_appUITests.swift */,
-				9A8BE2AB26E6735F0099D061 /* Info.plist */,
-			);
-			path = Test_appUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +242,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A8BE29F26E6735F0099D061 /* Test_appTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A8BE2AA26E6735F0099D061 /* Test_appUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +391,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Test_app/Preview Content\"";
+				DEVELOPMENT_TEAM = M4K9KRV46P;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Test_app/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
