@@ -9,20 +9,32 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack(content: {
-            RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                .stroke(lineWidth: 3)
-
-                .foregroundColor(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
-            
-            Text("Hello, world!")
-                .foregroundColor(.orange)
-        })
-        .padding(.horizontal)
-
+        VStack {
+            VStack {
+                HStack {
+                    CardView()
+                }.padding(.all)
+            }
+            Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
+                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Button")/*@END_MENU_TOKEN@*/
+            }
+        }
     }
-
 }
+
+
+struct CardView: View {
+    var body: some View{
+        ZStack {
+            VStack {
+                TextField("Placeholder", text: .constant(""))
+                SecureField("Password", text: .constant(""))
+            }
+            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        }
+    }
+}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
@@ -31,3 +43,5 @@ struct ContentView_Previews: PreviewProvider {
         }
     }
 }
+
+
