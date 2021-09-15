@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		9A8BE28F26E6735C0099D061 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8BE28E26E6735C0099D061 /* ContentView.swift */; };
 		9A8BE29126E6735F0099D061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A8BE29026E6735F0099D061 /* Assets.xcassets */; };
 		9A8BE29426E6735F0099D061 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A8BE29326E6735F0099D061 /* Preview Assets.xcassets */; };
+		9A944DC126EFF6E100AFD0E9 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9A944DC026EFF6E100AFD0E9 /* ParseSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A944DC126EFF6E100AFD0E9 /* ParseSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +122,9 @@
 			dependencies = (
 			);
 			name = Test_app;
+			packageProductDependencies = (
+				9A944DC026EFF6E100AFD0E9 /* ParseSwift */,
+			);
 			productName = Test_app;
 			productReference = 9A8BE28926E6735C0099D061 /* Test_app.app */;
 			productType = "com.apple.product-type.application";
@@ -191,6 +196,9 @@
 				Base,
 			);
 			mainGroup = 9A8BE28026E6735C0099D061;
+			packageReferences = (
+				9A944DBF26EFF6E100AFD0E9 /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+			);
 			productRefGroup = 9A8BE28A26E6735C0099D061 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -305,6 +313,10 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -366,6 +378,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -393,6 +409,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Test_app/Preview Content\"";
 				DEVELOPMENT_TEAM = M4K9KRV46P;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Test_app/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -415,6 +435,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Test_app/Preview Content\"";
 				DEVELOPMENT_TEAM = M4K9KRV46P;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Test_app/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -434,6 +458,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = Test_appTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -455,6 +483,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = Test_appTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,6 +507,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = Test_appUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -494,6 +530,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = Test_appUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -548,6 +588,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9A944DBF26EFF6E100AFD0E9 /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9A944DC026EFF6E100AFD0E9 /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A944DBF26EFF6E100AFD0E9 /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9A8BE28126E6735C0099D061 /* Project object */;
 }
